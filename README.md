@@ -1,1 +1,1 @@
-# smart-campus-new
+# smart-campus
