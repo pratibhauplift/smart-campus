@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Complaints</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>📋 Manage Complaints</h1>
+
+    <div class="complaints-container">
+
+        <table>
+
+            <tr>
+                <th>Complaint ID</th>
+                <th>Category</th>
+                <th>Location</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Assigned Staff</th>
+            </tr>
+
+            <tr>
+                <td>C101</td>
+                <td>Electrical</td>
+                <td>Block A</td>
+                <td>High</td>
+                <td>Pending</td>
+                <td>Raj Kumar</td>
+            </tr>
+
+            <tr>
+                <td>C102</td>
+                <td>Wi-Fi</td>
+                <td>Library</td>
+                <td>Medium</td>
+                <td>In Progress</td>
+                <td>Amit Singh</td>
+            </tr>
+
+            <tr>
+                <td>C103</td>
+                <td>Plumbing</td>
+                <td>Hostel</td>
+                <td>Low</td>
+                <td>Resolved</td>
+                <td>Ravi Verma</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="assign-container">
+
+        <h2>Assign Complaint to Staff</h2>
+
+        <form class="assign-form">
+
+            <label>Complaint ID</label>
+            <input type="text"
+                   placeholder="Enter Complaint ID">
+
+            <label>Assign Staff</label>
+
+            <select>
+                <option>Select Staff</option>
+                <option>Raj Kumar</option>
+                <option>Amit Singh</option>
+                <option>Ravi Verma</option>
+            </select>
+
+            <button type="button"
+                    onclick="alert('Complaint Assigned Successfully')">
+
+                Assign Complaint
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <a href="admin.html">
+        <button class="back-btn">
+            ⬅ Back to Admin Dashboard
+        </button>
+    </a>
+
+</body>
+
+</html>

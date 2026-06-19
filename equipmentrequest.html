@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Request</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="request-card">
+
+            <h1>Equipment Request</h1>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="equipmentName">Equipment Name</label>
+                    <input type="text"
+                           id="equipmentName"
+                           placeholder="Enter Equipment Name"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number"
+                           id="quantity"
+                           placeholder="Enter Required Quantity"
+                           min="1"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" required>
+                        <option value="">Select Department</option>
+                        <option>CSE</option>
+                        <option>IT</option>
+                        <option>ECE</option>
+                        <option>Mechanical</option>
+                        <option>Civil</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="requestDate">Required Date</label>
+                    <input type="date"
+                           id="requestDate"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="purpose">Purpose</label>
+                    <textarea id="purpose"
+                              rows="5"
+                              placeholder="Describe why you need this equipment"
+                              required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+                    <select id="priority">
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                        <option>Urgent</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Submit Request
+                </button>
+
+            </form>
+
+            <a href="professor.html" class="back-btn-link">
+            <button class="back-btn">
+                Back to Dashboard
+            </button>
+            </a>
+            
+
+        </div>
+
+    </div>
+
+</body>
+</html>

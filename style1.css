@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+        90deg,
+        #021024,
+        #052659,
+        #021024
+    );
+    text-align:center;
+}
+
+/* Overlay */
+.overlay{
+    background:linear-gradient(
+        90deg,
+        #021024,
+        #052659,
+        #021024
+    );
+    min-height:100vh;
+    padding:40px;
+}
+
+/* Main Heading */
+h1{
+    text-align:center;
+    font-size:70px;
+    margin-bottom:50px;
+    color:white;
+    text-shadow:0 0 3px cyan;
+}
+
+/* Search Section */
+.search-section{
+    width:85%;
+    margin:auto;
+    background:#021024;
+    padding:40px;
+    border-radius:20px;
+}
+
+.search-section h2{
+    margin-bottom:30px;
+    color:white;
+}
+
+/* Track Box */
+.track-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.track-box input{
+    width:350px;
+    padding:18px;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
+}
+
+.track-box button{
+    padding:18px 30px;
+    border:none;
+    border-radius:12px;
+    background:#00d4ff;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.track-box button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px #00d4ff;
+}
+
+/* Status Cards */
+.status-container{
+    width:85%;
+    margin:50px auto;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:250px;
+    height:180px;
+    background:#021024;
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(0,255,255,0.4);
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.card h3{
+    margin-bottom:20px;
+    font-size:30px;
+    color:#ffffff;
+}
+
+.card p{
+    font-size:35px;
+    color:#ffffff;
+}
+
+.yellow{
+    color:gold;
+}
+
+.red{
+    color:red;
+}
+
+/* Complaint Details */
+.details-section{
+    width:85%;
+    margin:auto;
+    background:#021024;
+    padding:30px;
+    border-radius:20px;
+}
+
+.details-section h2{
+    margin-bottom:30px;
+    color:white;
+}
+
+.details-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.detail-card{
+    width:320px;
+    height:180px;
+    background:rgba(236,205,205, 0.08);
+    border:1px solid rgba(0,255,255,0.3);
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.detail-card h3{
+    margin-bottom:15px;
+    font-size:28px;
+    color:white;
+}
+
+.detail-card p{
+    font-size:22px;
+    color:#ddd;
+}
+
+/* Common Sections */
+.section{
+    width:85%;
+    margin:30px auto;
+    padding:25px;
+    border-radius:20px;
+    background:#021024;
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(0,255,255,.3);
+}
+
+.section h2{
+    margin-bottom:15px;
+    color:white;
+}
+
+.section p{
+    color:#ddd;
+    line-height:1.7;
+    font-size:18px;
+}
+
+/* Evidence Image */
+.section img{
+    display:block;
+    margin:15px auto;
+    width:100%;
+    max-width:500px;
+    height:auto;
+    border-radius:15px;
+    object-fit:cover;
+}
+
+/* Live Status */
+.live-status{
+    color:#00ff99 !important;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* Heatmap */
+.heatmap{
+    font-size:22px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    color:white;
+}
+
+/* Rating Stars */
+.stars{
+    font-size:35px;
+    color:gold;
+}
+
+/* Download Button */
+.download-btn{
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    background:#00d4ff;
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.download-btn:hover{
+    box-shadow:0 0 20px #00d4ff;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    h1{
+        font-size:40px;
+    }
+
+    .card,
+    .detail-card{
+        width:100%;
+    }
+
+    .track-box input{
+        width:100%;
+    }
+
+    .heatmap{
+        flex-direction:column;
+        gap:10px;
+    }
+}

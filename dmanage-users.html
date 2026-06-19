@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resource Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🏢 Resource Management</h1>
+
+    <div class="resource-container">
+
+        <table>
+
+            <tr>
+                <th>Resource ID</th>
+                <th>Resource Name</th>
+                <th>Type</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>R101</td>
+                <td>Computer Lab</td>
+                <td>Lab</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>R102</td>
+                <td>Seminar Hall</td>
+                <td>Hall</td>
+                <td>Booked</td>
+            </tr>
+
+            <tr>
+                <td>R103</td>
+                <td>Projector</td>
+                <td>Equipment</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>R104</td>
+                <td>Smart Classroom</td>
+                <td>Classroom</td>
+                <td>Booked</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="resource-form-container">
+
+        <h2>Add New Resource</h2>
+
+        <form class="resource-form">
+
+            <label>Resource Name</label>
+            <input type="text"
+                   placeholder="Enter Resource Name">
+
+            <label>Resource Type</label>
+
+            <select>
+                <option>Select Type</option>
+                <option>Lab</option>
+                <option>Classroom</option>
+                <option>Equipment</option>
+                <option>Hall</option>
+            </select>
+
+            <button type="button"
+                onclick="alert('Resource Added Successfully')">
+
+                Add Resource
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <a href="director.html">
+        <button class="back-btn">
+            ⬅ Back to Admin Dashboard
+        </button>
+    </a>
+
+</body>
+
+</html>
